@@ -20,8 +20,8 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <stdtype.h> // TO-DO: add to include path on developer machines to disguise typedefs. MAC: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
-#include "SMBIOS.h"  // Use the appropriate DMG file to complete installation of stdtype.h
+#include <stdtype.h> // TO-DO: add to include path
+#include "SMBIOS.h" 
 
 typedef unsigned long u64;
 
