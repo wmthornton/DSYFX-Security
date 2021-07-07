@@ -18,7 +18,7 @@
 #pragma once
 
 #include <stdio.h>
-#include <stdtype.h>
+#include "includes/stdtype.h"
 
 // Store values in UEFI implementation. Will eventually store on SMBIOS chip.
 dsyfx_dcf_t SAUCE = 0x79481E6BBCC01223;
