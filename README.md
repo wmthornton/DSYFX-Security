@@ -3,7 +3,7 @@
 
  Description:
 
- DSYFX (Don't Steal YAFIX) is a rudimentary security implementation designed to retrieve magic values from the SMBIOS of UEFI-based systems running YAFIX (Yet Another Fucking Operating System https://github.com/wmthornton/YAFIX-x64-Main.git). 
+ DSYFX (Don't Steal YAFIX) is a rudimentary security implementation designed to retrieve magic values from the SMBIOS of UEFI-based systems running YAFIX (Yet Another Fucking Operating System https://github.com/wmthornton/YAFIX-x86_64.git). 
 
  DSYFX is designed to work by retrieving three values stored in the SMBIOS of YAFIX systems: MAGIC, SAUCE, & SMB1. In this version of the code, the SMBIOS is emulated with a header file containing these values, as code to read and process the data stored in the SMBIOS has not been written (yet). 
 

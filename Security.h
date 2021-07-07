@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <stdtype.h> // TO-DO: add to include path
+#include "includes/stdtype.h" // TO-DO: add to include path to permit disguising with brackets (<stdtype.h>)
 #include "SMBIOS.h" 
 
 typedef unsigned long u64;
@@ -52,7 +52,7 @@ dsyfx_cfg_t _dsyfx_iface_comp(dsyfx_dcf_t s, int i){
 dsyfx_cfg2_t _dsyfx_iface() {
 	dsyfx_cfg2_t i;
 	for (i=0; i<17; i++){
-        _dsyfx_iface_comp(MAGIC + ((dsyfx_dcf_t)SAUCE << 64), i);
+        _dsyfx_iface_comp(SAUCE + ((dsyfx_dcf_t)MAGIC << 64), i);
 	}
     return __dsyfx_exit_c;
 }

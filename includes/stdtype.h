@@ -17,15 +17,6 @@
 
 #pragma once
 
-#include <stdio.h>
-#include <stdtype.h>
-
-// Store values in UEFI implementation. Will eventually store on SMBIOS chip.
-dsyfx_dcf_t SAUCE = 0x79481E6BBCC01223;
-dsyfx_cfg2_t MAGIC = 0x1222DC;
-
-char SMB1[18] = "DREAM_ON_ASSHOLES";
-
-
-
-
+typedef void dsyfx_cfg_t;
+typedef int dsyfx_cfg2_t;
+typedef __int128_t dsyfx_dcf_t;
